@@ -413,14 +413,14 @@ p {
   color: #ffffff;
   font-size: 30px;
   width: 50px;
-  height: 50PX%;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #29245f;
   border-radius: 50%;
   border: 1px solid #7655ff;
-  taransition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .icons a:hover {
   background-color: #7655ff;
@@ -479,12 +479,23 @@ footer {
   .about-me .my-goal h2 {
     font-size: 16px;
   }
+
   .skills {
     grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto 2%;
+    padding: 4%;
   }
   .skills .my-skills {
     grid-column: 1;
     font-size: 10px;
+  }
+  .skills .frontend,
+  .skills .responsive,
+  .skills .development-tools {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
   }
   .skills h2 {
     font-size: 14px;
@@ -511,14 +522,16 @@ footer {
 
   .contact {
     grid-template-columns: 1fr;
-    width: 85%;
+    width: 90%;
+    margin: 0 auto 2%;
+    padding: 4%;
   }
   .contact .contact-form {
     font-size: 12px;
   }
 
   .contact .get-in-touch {
-    grid-column: 1;
+    /* grid-column: 1; */
     font-size: 12px;
   }
   .contact .contact-container,
@@ -527,8 +540,9 @@ footer {
     grid-column: 1;
     width: 100%;
     box-sizing: border-box;
+    padding: 5%;
   }
-  .contact p {
+  */ .contact p {
     font-size: 12px;
   }
   .contact .contact-me {
